@@ -1,3 +1,5 @@
+package Premier_serie_exercice;
+
 import java.util.Scanner;
 
 public class Nombre_Pair_Impair_Premier {

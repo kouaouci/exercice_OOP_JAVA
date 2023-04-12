@@ -1,3 +1,5 @@
+package Premier_serie_exercice;
+
 public class Pyramid {
     public static void main(String[] args){
         // Afficher une pyramide à l’aide d’un caractère

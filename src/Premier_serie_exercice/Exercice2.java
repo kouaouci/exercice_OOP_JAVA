@@ -1,3 +1,4 @@
+package Premier_serie_exercice;
 
 import java.util.Scanner;
 public class Exercice2 {
