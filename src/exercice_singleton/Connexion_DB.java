@@ -4,9 +4,8 @@ import java.awt.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-
 public class Connexion_DB {
-    static final String DB_URL = "jdbc:mysql://localhost/bdtest";
+    static final String DB_URL = "jdbc:mysql://localhost/bdtest/";
     static final String USER = "root";
     static final String PASS = "karima2803!";
     static final String QUERY = "SELECT id, nom, prenom, age FROM user";

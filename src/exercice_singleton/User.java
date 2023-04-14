@@ -1,21 +1,21 @@
 package exercice_singleton;
 
-import java.util.Date;
 
 public class User {
     public int id;
     public String nom;
     public String prenom;
     public int Age;
-    public Date dateNaissance;
 
-    public User(int id, String nom, String prenom, int age, Date dateNaissance) {
+
+    public User(int id, String nom, String prenom, int age) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         Age = age;
-        this.dateNaissance = dateNaissance;
+
     }
+
 
     public int getId() {
         return id;
@@ -49,11 +49,5 @@ public class User {
         Age = age;
     }
 
-    public Date getDateNaissance() {
-        return dateNaissance;
-    }
 
-    public void setDateNaissance(Date dateNaissance) {
-        this.dateNaissance = dateNaissance;
-    }
 }
