@@ -8,11 +8,11 @@
     <version>3.0.5</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
-  <groupId>initiation_Java</groupId>
-  <artifactId>initiation_Java</artifactId>
+  <groupId>Initiation_Java</groupId>
+  <artifactId>Initiation_Java</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>demo</name>
-  <description>Demo project for Spring Boot</description>
+  <name>Initiation_Java</name>
+  <description>Initiation_Java</description>
   <properties>
     <java.version>17</java.version>
   </properties>

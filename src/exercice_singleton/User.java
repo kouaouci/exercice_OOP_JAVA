@@ -1,18 +1,28 @@
 package exercice_singleton;
 
 
+import java.time.LocalDate;
+
 public class User {
     public int id;
     public String nom;
     public String prenom;
-    public int Age;
+    public LocalDate dateNaissance;
 
+    public LocalDate getDateNaissance() {
+        return dateNaissance;
+    }
 
-    public User(int id, String nom, String prenom, int age) {
+    public void setDateNaissance(LocalDate dateNaissance) {
+        this.dateNaissance = dateNaissance;
+    }
+
+    public User(int id, String nom, String prenom, LocalDate dateNaissance) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
-        Age = age;
+
+
 
     }
 
@@ -41,13 +51,17 @@ public class User {
         this.prenom = prenom;
     }
 
-    public int getAge() {
-        return Age;
+
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", dateNAissance=" + dateNaissance +
+
+                '}';
     }
 
-    public void setAge(int age) {
-        Age = age;
-    }
 
 
 }

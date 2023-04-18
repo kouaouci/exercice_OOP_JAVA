@@ -3,6 +3,7 @@ package exercice_singleton;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.time.LocalDate;
 
 public class Serialization {
 
@@ -11,7 +12,8 @@ public class Serialization {
     public static  void main(String[] args) {
             try {
                 // Créer un objet Person
-                User person = new User(1,"John", "Marc",30);
+                LocalDate dateNaissance = LocalDate.of(1982, 3, 28);
+                User person = new User(1,"John", "Marc", dateNaissance );
 
                 // Créer un flux de sortie
                 FileOutputStream fileOut = new FileOutputStream ("user.json");

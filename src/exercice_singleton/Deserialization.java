@@ -2,7 +2,7 @@ package exercice_singleton;
 
 import java.io.*;
 
-public class Déserialization {
+public class Deserialization {
     public static void main(String[] args) {
             try {
                 // Créer un flux d'entrée
@@ -18,7 +18,7 @@ public class Déserialization {
 
                 // Afficher les propriétés de l'objet désérialisé
                 System.out.println("Nom: " + person.getNom ());
-                System.out.println("Âge: " + person.getAge());
+
             } catch(IOException i) {
                 i.printStackTrace();
             } catch(ClassNotFoundException c) {

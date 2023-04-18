@@ -1,4 +1,4 @@
-package CompteBancaire;
+package CompteBancaire.entité;
 
 import java.util.Date;
 
@@ -6,13 +6,13 @@ public class User {
 
     int id;
     String nom;
-    String Prénom;
+    String prenom;
     Date dateNaissance;
 
-    public User(int id, String nom, String prénom, Date dateNaissance) {
+    public User(int id, String nom, String prenom, Date dateNaissance) {
         this.id = id;
         this.nom = nom;
-        Prénom = prénom;
+        this.prenom = prenom;
         this.dateNaissance = dateNaissance;
     }
     public int getId() {
@@ -31,15 +31,15 @@ public class User {
         this.nom = nom;
     }
 
-    public String getPrénom() {
-        return Prénom;
-    }
 
-    public void setPrénom(String prénom) {
-        Prénom = prénom;
-    }
 
-    public Date getDateNaissance() {
+    public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	public Date getDateNaissance() {
         return dateNaissance;
     }
 
