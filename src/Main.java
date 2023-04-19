@@ -1,7 +1,37 @@
-public class Main {
-    public static void main(String[] args) {
+import Application_Bank.entité.Client;
+import Application_Bank.entité.Compte_Bancaire;
+import Application_Bank.service.CompteService;
 
-        System.out.println("Hello world!");
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println ( "Hello world!" );
 
     }
-}
+
+    //public static void main(String[] args) throws FileNotFoundException {
+
+
+
+
+        // se qui concerne l'application banque
+
+       /* CompteService cs = new CompteService ();
+        ArrayList<Compte_Bancaire> compte_bancaires = cs.getAllCompte (); // chargement des comptes bancaires à partir du fichier CSV
+        for (Compte_Bancaire b : compte_bancaires) {
+            System.out.println ( b.getNuméroDeCompte () + " " + b.getMontant () );
+        }
+
+        Client client1 = new Client ( "Marc", "Dutoo" );
+        client1.postCompteBancaire ( compte_bancaires.get ( 0 ) );
+        client1.postCompteBancaire ( compte_bancaires.get ( 1 ) );
+
+
+        Client client2 = new Client ( "Marc", "felix" );
+        client2.postCompteBancaire ( compte_bancaires.get ( 2 ) );
+        client2.getCompteBancaire ( compte_bancaires.get ( 3 ).getNuméroDeCompte () );*/
+
+
+    }

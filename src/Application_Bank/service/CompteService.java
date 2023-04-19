@@ -23,9 +23,15 @@ public class CompteService {
 
     public ArrayList<Compte_Bancaire>getAllCompte() throws FileNotFoundException{
         ArrayList<Compte_Bancaire> compte_bancaires=new ArrayList<Compte_Bancaire> ();
-        Scanner sc = new Scanner ( new File ( "" ) );
+        Scanner sc = new Scanner ( new File ( "./src/Application_Bank/compte.csv" ) );
         sc.useDelimiter ( "\\r" );
         while (sc.hasNext ()){
+
+
+
+
+
+
             String dataLine= sc.next ();
             String[] data= dataLine.split ( ";",2 );
             compte_bancaires.add ( new Compte_Bancaire (Integer.valueOf ( data[0].trim () ),Double.parseDouble ( data[1].trim () )) );

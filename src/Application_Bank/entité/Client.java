@@ -5,9 +5,10 @@ import java.util.Date;
 
 public class Client {
 
-    int id;
-   private String nom;
-   private  String prenom;
+
+    private String nom;
+    private String prenom;
+    private ArrayList<Compte_Bancaire> compteBancaires;
 
     public Client(String nom, String prenom, ArrayList<Compte_Bancaire> compteBancaires) {
         this.nom = nom;
@@ -15,31 +16,11 @@ public class Client {
         this.compteBancaires = compteBancaires;
     }
 
-    public ArrayList<Compte_Bancaire> getCompteBancaires() {
-        return compteBancaires;
-    }
+    public Client(String nom, String prenom) {
 
-    public void setCompteBancaires(ArrayList<Compte_Bancaire> compteBancaires) {
-        this.compteBancaires = compteBancaires;
-    }
-
-    private ArrayList<Compte_Bancaire> compteBancaires;
-
-
-
-
-    public Client(int id, String nom, String prenom) {
-        this.id = id;
         this.nom = nom;
         this.prenom = prenom;
 
-    }
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNom() {
@@ -51,13 +32,32 @@ public class Client {
     }
 
 
-
     public String getPrenom() {
-		return prenom;
-	}
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
-	}
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
+    }
+
+    public ArrayList<Compte_Bancaire> getCompteBancaires() {
+        return compteBancaires;
+    }
+
+    public void setCompteBancaires(ArrayList<Compte_Bancaire> compteBancaires) {
+        this.compteBancaires = compteBancaires;
+    }
+    //get une seul compte bancaire
+    public Compte_Bancaire getCompteBancaire(int id){
+        return compteBancaires.get ( id );
+    }
+    // inserer un un nouveau compte
+    public void postCompteBancaire (Compte_Bancaire compteBancaire){
+        this.compteBancaires.add ( compteBancaire );
+    }
+
 
 
 }
+
+
