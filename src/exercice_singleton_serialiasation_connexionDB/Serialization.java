@@ -1,4 +1,4 @@
-package exercice_singleton;
+package exercice_singleton_serialiasation_connexionDB;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

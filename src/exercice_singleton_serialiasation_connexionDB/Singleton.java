@@ -1,4 +1,4 @@
-package exercice_singleton;
+package exercice_singleton_serialiasation_connexionDB;
 
 public class Singleton {
     public static void main(String[] args) {

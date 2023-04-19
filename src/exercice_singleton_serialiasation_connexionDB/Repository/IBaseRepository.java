@@ -1,6 +1,6 @@
-package exercice_singleton.Repository;
+package exercice_singleton_serialiasation_connexionDB.Repository;
 
-import exercice_singleton.User;
+import exercice_singleton_serialiasation_connexionDB.User;
 
 import java.sql.SQLException;
 import java.util.List;

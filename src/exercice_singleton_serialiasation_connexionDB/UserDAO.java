@@ -1,6 +1,5 @@
-package exercice_singleton;
+package exercice_singleton_serialiasation_connexionDB;
 
-import java.net.URL;
 import java.sql.*;
 
 public class UserDAO {

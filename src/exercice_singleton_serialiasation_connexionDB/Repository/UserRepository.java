@@ -1,16 +1,14 @@
-package exercice_singleton.Repository;
+package exercice_singleton_serialiasation_connexionDB.Repository;
 
 
-import exercice_singleton.Connexion_DB;
-import exercice_singleton.User;
+import exercice_singleton_serialiasation_connexionDB.Connexion_DB;
+import exercice_singleton_serialiasation_connexionDB.User;
 
-import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public interface UserRepository extends IBaseRepository<User> {

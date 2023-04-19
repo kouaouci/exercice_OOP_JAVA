@@ -1,4 +1,4 @@
-package troisieme_serie_exercice;
+package troisieme_serie_exercice_Forms;
 
 public class Square extends  Rectangle {
     public static void main(String[] args) {
