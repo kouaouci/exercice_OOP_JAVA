@@ -6,19 +6,11 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println ( "Hello world!" );
-
-    }
-
-    //public static void main(String[] args) throws FileNotFoundException {
-
-
-
-
         // se qui concerne l'application banque
 
-       /* CompteService cs = new CompteService ();
+        CompteService cs = new CompteService ();
         ArrayList<Compte_Bancaire> compte_bancaires = cs.getAllCompte (); // chargement des comptes bancaires à partir du fichier CSV
         for (Compte_Bancaire b : compte_bancaires) {
             System.out.println ( b.getNuméroDeCompte () + " " + b.getMontant () );
@@ -31,7 +23,8 @@ public class Main {
 
         Client client2 = new Client ( "Marc", "felix" );
         client2.postCompteBancaire ( compte_bancaires.get ( 2 ) );
-        client2.getCompteBancaire ( compte_bancaires.get ( 3 ).getNuméroDeCompte () );*/
-
+        client2.getCompteBancaire ( compte_bancaires.get ( 3 ).getNuméroDeCompte () );
+        cs.virement ( client1.getCompteBancaire ( 0 ),client2.getCompteBancaire (0  ),50 );
 
     }
+}
